@@ -1,5 +1,6 @@
 import React from "react";
 import Fav from "./Fav";
+import './FavList.css';
 
 const FavList = ({favImages}) => {
     const favImageListItems = favImages.map((image, index) => {
@@ -10,7 +11,7 @@ const FavList = ({favImages}) => {
     return (
 <>
 <h2>Favourites List</h2>
-<div>
+<div className="favList">
     {favImageListItems}
 </div>
 

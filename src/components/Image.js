@@ -10,7 +10,7 @@ const Image = ({image, addToFavourites}) => {
 
     return (
         <>
-        <p>This is the image</p>
+        <p></p>
         {image ? <img src={image.links[0].href} width="300"></img> : null}
         <br/>
         <FavButton onClick={onClick} value={image}></FavButton>

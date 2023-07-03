@@ -4,7 +4,7 @@ import GalleryContainer from './containers/GalleryContainer';
 function App() {
   return (
     <>
-    <p>This is our Nasa gallery!</p>
+    <h2>Nasa Images Gallery</h2>
     <GalleryContainer/>
     </>
   );

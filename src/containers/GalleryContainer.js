@@ -35,10 +35,6 @@ const handleImageSelected = (image) => {
 
 return (
     <>
-    <p>I am a gallery container</p>
-    {/* {images? <p>{images[0].data[0].nasa_id}</p> : null} */}
-    {/* {images ? <img src={images[1].links[0].href}></img> : null}
-     */}
      <ImageSelector images={images} onImageSelected={handleImageSelected}/>
      <Image image={selectedImage} addToFavourites={addToFavourites}></Image>
      <FavList favImages={favImages} />
