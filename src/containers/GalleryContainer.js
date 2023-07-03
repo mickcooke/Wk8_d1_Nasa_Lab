@@ -33,11 +33,15 @@ const handleImageSelected = (image) => {
     console.log(image);
 }
 
+const clearFavList = () => {
+    setFavImages([""]);
+}
+
 return (
     <>
      <ImageSelector images={images} onImageSelected={handleImageSelected}/>
      <Image image={selectedImage} addToFavourites={addToFavourites}></Image>
-     <FavList favImages={favImages} />
+     <FavList favImages={favImages} clearFavList={clearFavList}/>
     </>
 )
 
