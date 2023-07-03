@@ -16,7 +16,7 @@ const ImageSelector = ({images, onImageSelected}) => {
     const dropdownStyles = {
         control: (provided) => ({
           ...provided,
-          width: 600, // Adjust the width as desired
+          width: 100, // Adjust the width as desired
         }),
       };
 
