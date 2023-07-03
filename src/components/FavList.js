@@ -19,9 +19,9 @@ const FavList = ({favImages, clearFavList}) => {
 </div>
 
 <div className="favContainer">
-<div className="favList">
+
     {favImageListItems}
-</div>
+
 </div>
 
 

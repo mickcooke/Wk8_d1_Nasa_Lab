@@ -6,7 +6,7 @@ import FavList from '../components/FavList';
 const GalleryContainer = () => {
   const [images, setImages] = useState([""]);
   const [selectedImage, setSelectedImage] = useState("");
-  const [favImages, setFavImages] = useState([""]);
+  const [favImages, setFavImages] = useState([]);
 
   const getImages = () => {
     fetch("https://images-api.nasa.gov/search?q=galaxies")
@@ -34,7 +34,7 @@ const handleImageSelected = (image) => {
 }
 
 const clearFavList = () => {
-    setFavImages([""]);
+    setFavImages([]);
 }
 
 return (
