@@ -1,6 +1,7 @@
 import React from "react";
 import Fav from "./Fav";
 import './FavList.css';
+import DeleteButton from "./DeleteButton";
 
 const FavList = ({favImages, clearFavList}) => {
     const favImageListItems = favImages.map((image, index) => {
@@ -8,19 +9,21 @@ const FavList = ({favImages, clearFavList}) => {
       
     })
 
-    const handleClick = () => {
-       
-        clearFavList();
     
-    }
 
     return (
 <>
 <h2>Favourites List</h2>
+<div>
+    <DeleteButton clearFavList={clearFavList}/>
+</div>
+
+<div className="favContainer">
 <div className="favList">
     {favImageListItems}
 </div>
-<button onClick={handleClick}>Clear List</button>
+</div>
+
 
 </>
 
