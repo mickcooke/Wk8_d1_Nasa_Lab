@@ -3,9 +3,9 @@ import Fav from "./Fav";
 import './FavList.css';
 import DeleteButton from "./DeleteButton";
 
-const FavList = ({favImages, clearFavList}) => {
+const FavList = ({favImages, clearFavList, deleteFromFavourites}) => {
     const favImageListItems = favImages.map((image, index) => {
-        return <Fav image={image} key={index}/>
+        return <Fav image={image} index={index} deleteFromFavourites={deleteFromFavourites}/>
       
     })
 

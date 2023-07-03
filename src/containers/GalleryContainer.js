@@ -15,6 +15,7 @@ const GalleryContainer = () => {
   }
 
   const addToFavourites = (image) => {
+    console.log(image);
     if (favImages.includes(image)){
         return null
     }else{
@@ -22,6 +23,12 @@ const GalleryContainer = () => {
     setFavImages([...favImages, image]);
     console.log(favImages);
     }
+  }
+
+  const deleteFromFavourites = (index) => {
+    console.log(index);
+    const temp= favImages.slice(index, 1);
+    setFavImages(temp);
   }
 
 useEffect(() => {
@@ -42,7 +49,7 @@ return (
     
      <ImageSelector images={images} onImageSelected={handleImageSelected}/>
      <Image image={selectedImage} addToFavourites={addToFavourites}></Image>
-     <FavList favImages={favImages} clearFavList={clearFavList}/>
+     <FavList favImages={favImages} clearFavList={clearFavList} deleteFromFavourites={deleteFromFavourites}/>
      
     </>
 )

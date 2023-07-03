@@ -5,7 +5,6 @@ const Image = ({image, addToFavourites}) => {
 
     const onClick = (event) => {
         addToFavourites({image});
-      
     }
 
     return (
