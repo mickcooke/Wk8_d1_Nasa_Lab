@@ -39,9 +39,11 @@ const clearFavList = () => {
 
 return (
     <>
+    
      <ImageSelector images={images} onImageSelected={handleImageSelected}/>
      <Image image={selectedImage} addToFavourites={addToFavourites}></Image>
      <FavList favImages={favImages} clearFavList={clearFavList}/>
+     
     </>
 )
 

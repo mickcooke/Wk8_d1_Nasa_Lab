@@ -7,7 +7,11 @@ const Fav = ({image, index}) => {
         return null
     }
 
-  return <div><img src={image.image.links[0].href} className="favList"></img></div>
+  return <div className="favList">
+    <img src={image.image.links[0].href} className="favImage"></img>
+    <br></br>
+    <button className="center">Delete</button>
+  </div>
 
 
     // return (

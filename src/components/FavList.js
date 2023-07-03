@@ -13,10 +13,12 @@ const FavList = ({favImages, clearFavList}) => {
 
     return (
 <>
+<section>
 <h2>Favourites List</h2>
 <div>
     <DeleteButton clearFavList={clearFavList}/>
 </div>
+</section>
 
 <div className="favContainer">
 

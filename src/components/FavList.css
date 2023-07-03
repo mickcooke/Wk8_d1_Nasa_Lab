@@ -1,7 +1,10 @@
-.favList {
+
+
+.favImage {
     width:200px; 
     height:200px; 
     padding:20px;
+
 }
 
 .favContainer {
@@ -11,3 +14,10 @@
     padding:10px;
 }
 
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
